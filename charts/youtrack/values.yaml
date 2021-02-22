@@ -69,5 +69,5 @@ persistence:
   sizeBackups: 5Gi
 
 # Useful for initial setup
-# livenessProbe:
-#   initialDelaySeconds: 300
+livenessProbe:
+  initialDelaySeconds: 180
