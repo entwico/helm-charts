@@ -1,0 +1,15 @@
+{{- if and .Values.persistence.enabled }}
+kind: PersistentVolumeClaim
+apiVersion: v1
+metadata:
+  name: {{ include "youtrack.fullname" . }}-backups
+  labels:
+    {{- include "youtrack.labels" . | nindent 4 }}
+spec:
+  accessModes:
+    - {{ .Values.persistence.accessMode | quote }}
+  resources:
+    requests:
+      storage: {{ .Values.persistence.sizeBackups | quote }}
+  storageClassName: {{ .Values.persistence.storageClass | default "" }}
+{{- end -}}

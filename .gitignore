@@ -1,0 +1,9 @@
+*.rkestate
+.DS_Store
+.idea
+*.iml
+.vscode
+.envrc
+.env
+Chart.lock
+charts/**/*.tgz
