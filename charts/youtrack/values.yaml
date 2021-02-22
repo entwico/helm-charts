@@ -67,3 +67,7 @@ persistence:
   sizeData: 10Gi
   sizeConf: 1Gi
   sizeBackups: 5Gi
+
+# Useful for initial setup
+# livenessProbe:
+#   initialDelaySeconds: 300
