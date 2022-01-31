@@ -21,7 +21,8 @@ podSecurityContext:
   runAsGroup: 13001
   fsGroup: 13001
 
-securityContext: {}
+securityContext:
+  {}
   # capabilities:
   #   drop:
   #   - ALL
@@ -35,7 +36,8 @@ service:
 
 ingress:
   enabled: false
-  annotations: {}
+  annotations:
+    {}
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
@@ -46,7 +48,8 @@ ingress:
   #    hosts:
   #      - chart-example.local
 
-resources: {}
+resources:
+  {}
   # limits:
   #   cpu: 100m
   #   memory: 128Mi
@@ -62,7 +65,7 @@ affinity: {}
 
 persistence:
   enabled: true
-  # storageClass: "-"
+  storageClass: ""
   accessMode: ReadWriteOnce
   sizeData: 10Gi
   sizeConf: 1Gi
