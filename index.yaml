@@ -13,6 +13,15 @@ entries:
     version: 0.1.0
   youtrack:
   - apiVersion: v2
+    appVersion: 2022.3.65366
+    created: "2023-01-16T12:57:26.227034166Z"
+    description: Issue tracker from JetBrains
+    digest: c42998a29cef07c92a163b5418070ea640ba8e2146d585c1dd52380352e5d5ff
+    name: youtrack
+    urls:
+    - https://github.com/entwico/helm-charts/releases/download/youtrack-0.1.5/youtrack-0.1.5.tgz
+    version: 0.1.5
+  - apiVersion: v2
     appVersion: 2022.2.53354
     created: "2022-08-15T09:55:05.332710178Z"
     description: Issue tracker from JetBrains
@@ -66,4 +75,4 @@ entries:
     urls:
     - https://github.com/entwico/helm-charts/releases/download/youtrack-0.0.1/youtrack-0.0.1.tgz
     version: 0.0.1
-generated: "2023-01-15T18:09:51.938389441Z"
+generated: "2023-01-16T12:57:26.227057865Z"
